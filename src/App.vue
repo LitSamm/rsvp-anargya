@@ -115,7 +115,7 @@ onMounted(() => {
               </li>
               <li class="highlight-card">
                 <span>Location</span>
-                <strong>ITS Electric Vehicle Research Building</strong>
+                <strong>Balai Pemuda Surabaya</strong>
               </li>
               <li class="highlight-card">
                 <span>Status</span>
