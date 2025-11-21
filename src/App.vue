@@ -111,7 +111,7 @@ onMounted(() => {
             <ul class="mark-highlights">
               <li class="highlight-card">
                 <span>Schedule</span>
-                <strong>December 14, 2026</strong>
+                <strong>December 14, 2025</strong>
               </li>
               <li class="highlight-card">
                 <span>Location</span>
