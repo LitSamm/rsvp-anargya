@@ -170,6 +170,13 @@ body {
   border-radius: 28px;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
   padding: 40px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mark-launch:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(134, 239, 172, 0.1);
+  border-color: rgba(134, 239, 172, 0.2);
 }
 
 .launch-grid {
@@ -196,6 +203,14 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  transition: all 0.3s ease;
+}
+
+.mark-copy:hover {
+  background: rgba(0, 0, 0, 0.45);
+  border-color: rgba(134, 239, 172, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(22, 163, 74, 0.2);
 }
 
 .mark-copy h2 {
@@ -225,6 +240,19 @@ body {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.highlight-card:hover {
+  transform: translateX(8px) translateY(-2px);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(134, 239, 172, 0.3);
+  box-shadow: 0 8px 24px rgba(22, 163, 74, 0.15);
+}
+
+.highlight-card:hover strong {
+  color: var(--accent);
 }
 
 .highlight-card span {
@@ -250,6 +278,13 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.08);
   align-self: start;
   width: 100%;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mark-visual:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 30px 80px rgba(22, 163, 74, 0.3), 0 0 0 1px rgba(134, 239, 172, 0.2);
+  border-color: rgba(134, 239, 172, 0.3);
 }
 
 .mark-photo {
@@ -284,6 +319,14 @@ body {
   border-radius: 24px;
   background: rgba(0, 0, 0, 0.35);
   border: 1px solid rgba(255, 255, 255, 0.06);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mark-panel:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(134, 239, 172, 0.15);
+  border-color: rgba(134, 239, 172, 0.2);
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .mark-panel-head {
@@ -305,6 +348,11 @@ body {
   background: rgba(13, 25, 18, 0.85);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(134, 239, 172, 0.1);
+}
+
+.mark-intro:hover {
+  border-color: rgba(134, 239, 172, 0.3);
+  box-shadow: 0 25px 70px rgba(22, 163, 74, 0.25);
 }
 
 .intro-grid {
@@ -352,6 +400,14 @@ body {
   position: relative;
   padding-left: 24px;
   margin-bottom: 12px;
+  transition: all 0.3s ease;
+  opacity: 0.9;
+}
+
+.intro-text ul li:hover {
+  opacity: 1;
+  transform: translateX(4px);
+  color: var(--text);
 }
 
 .intro-text ul li::before {
@@ -361,6 +417,11 @@ body {
   color: var(--accent);
   font-weight: 700;
   font-size: 1.1em;
+  transition: transform 0.3s ease;
+}
+
+.intro-text ul li:hover::before {
+  transform: scale(1.2) rotate(5deg);
 }
 
 .intro-visual {
@@ -419,6 +480,15 @@ body {
   border-radius: 18px;
   padding: 20px;
   border: 1px solid rgba(255, 255, 255, 0.06);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.metric-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(134, 239, 172, 0.3);
+  box-shadow: 0 12px 32px rgba(22, 163, 74, 0.2);
 }
 
 .metric-card span {
@@ -433,6 +503,13 @@ body {
   display: block;
   margin: 8px 0;
   font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.metric-card:hover strong {
+  color: var(--accent);
+  transform: scale(1.05);
+  display: inline-block;
 }
 
 .metric-card p {
@@ -459,6 +536,23 @@ body {
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.08);
   overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.update-card:hover {
+  transform: translateX(8px) translateY(-2px);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(134, 239, 172, 0.3);
+  box-shadow: 0 12px 32px rgba(22, 163, 74, 0.15);
+}
+
+.update-card:hover .update-media img {
+  transform: scale(1.1);
+}
+
+.update-card:hover h4 {
+  color: var(--accent);
 }
 
 .update-media {
@@ -472,6 +566,7 @@ body {
   height: 100%;
   object-fit: cover;
   display: block;
+  transition: transform 0.5s ease;
 }
 
 .update-content {
@@ -527,7 +622,14 @@ body {
   padding: 10px 14px;
   font-size: 14px;
   font-family: inherit;
-  transition: all 0.25s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.rsvp-form input:hover,
+.rsvp-form textarea:hover,
+.rsvp-form select:hover {
+  border-color: rgba(134, 239, 172, 0.3);
+  background: rgba(0, 0, 0, 0.35);
 }
 
 .rsvp-form input:focus,
@@ -536,6 +638,8 @@ body {
   outline: none;
   border-color: var(--primary);
   background: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.1);
+  transform: translateY(-1px);
 }
 
 .form-row {
