@@ -89,7 +89,7 @@ onMounted(() => {
     
     <section class="hero mark-hero" data-animate data-animate-type="fade-up">
       <div class="hero-content">
-        <p class="mark-eyebrow">Grand Launching 2026</p>
+        <p class="mark-eyebrow">Grand Launching 2025</p>
         <h1>Mark 1.5 — Ride The Infinity</h1>
         <p>Anargya ITS EV Team collaboration with Pertamina presents the latest Formula Student platform with a focus on energy efficiency and international competition readiness.</p>
         <div class="hero-cta">
@@ -111,7 +111,7 @@ onMounted(() => {
             <ul class="mark-highlights">
               <li class="highlight-card">
                 <span>Schedule</span>
-                <strong>January 19, 2026</strong>
+                <strong>December 14, 2026</strong>
               </li>
               <li class="highlight-card">
                 <span>Location</span>
